@@ -2,37 +2,261 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.div1 {
+  display: flex;
+  justify-content: space-around;
+}
+#btn1 {
+  padding: 5%;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  font-size: larger;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#btn1:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+#btn2 {
+  text-align: center;
+  padding: 2%;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  font-size: larger;
+}
+#btn2:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+#motiveDiv {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+#motiveDiv img {
+  transform: scale(1);
+  transition: all 1s;
+}
+#motiveDiv img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+#signup {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+#btn3 {
+  text-align: center;
+  padding: 8%;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  font-size: larger;
+}
+#btn3:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+#createaccountDiv {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+#signupformDiv {
+  padding: 2%;
+  border-radius: 8px;
+  width: 40%;
+}
+.infilelds {
+  padding: 2%;
+  width: 50%;
+  border: none;
+  background-color: #eee;
+  margin: 3%;
+  border-radius: 8px;
+}
+#signupbtn {
+  text-align: center;
+  padding: 2%;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  font-size: larger;
+  margin-top: 2%;
+}
+#signupbtn:hover {
+  cursor: pointer;
+  background-color: #bbf7bb;
+}
+#loginDiv {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+#loginformDiv {
+  margin-top: 8%;
+  padding: 2%;
+  border-radius: 8px;
+  width: 40%;
+}
+#head {
+  display: flex;
+  justify-content: space-around;
+}
+#action {
+  background-color: #d3b5e5;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2%;
+}
+#addPostbtn {
+  background-color: #bbe7fe;
+  padding: 2.5%;
+  border: none;
+  border-radius: 5px;
+}
+#addPostbtn:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+#mainDiv {
+  display: flex;
+  justify-content: space-around;
+}
+#postDiv {
+  background-color: #f6e6e8;
+  padding: 2%;
+  width: 60%;
+  border-radius: 10px;
+}
+#posts {
+  background-color: white;
+  padding: 2%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+}
+#profile {
+  background-color: #eff1db;
+}
+textarea {
+  border: none;
+  padding: 3%;
+  border-radius: 7px;
+  outline: none;
+  width: 70%;
+}
+.modalBackground{
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
   }
+  100% {
+      opacity: 1;
+   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.modalContainer {
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255 , 0.3);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
   flex-direction: column;
+  padding: 2%;
+}
+
+.modalContainer .title {
+  text-align: center;
+}
+.titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+}
+.titleCloseBtn button:hover{
+  cursor: pointer;
+}
+.modalContainer .body {
   align-items: center;
+  text-align: center;
+}
+
+.modalContainer .footer {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.modalContainer .footer button {
+  margin: 10px;
+  border: none;
+  background-color: cornflowerblue;
   color: white;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  padding:3%;
+}
+.modalContainer .footer button:hover{
+  opacity: 0.9;
 }
 
-.App-link {
-  color: #61dafb;
+#cancelBtn {
+  background-color: crimson;
 }
+#cancelBtn:hover{
+  opacity: 0.9;
+}
+.imgInput{
+padding:2%;
+border-radius: 7px;
+border:none;
+outline:none ;
+}
+.btnDel{
+  background-color: crimson;
+  margin:1%;
+  padding:1%;
+  border:none;
+  border-radius: 7px;
+  font-size: medium;
+  font-weight: bold;
+  color:white;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.btnDel:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+.btnEdit{
+ background-color: cornflowerblue;
+  margin:1%;
+  padding:1%;
+  border:none;
+  border-radius: 7px;
+  font-size: medium;
+  font-weight: bold;
+  color:white;
+
+}
+.btnEdit:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+.commentBox{
+  width:70%;
+  padding:1%;
 }
